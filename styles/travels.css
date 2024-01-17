@@ -1,0 +1,811 @@
+/* ----------shared styles---------- */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Sans-Serif;
+}
+.text-primary{
+   color: #ff5400;
+}
+section{
+   padding: 20px 0px;
+}
+h2{
+   margin: 20px 0px;
+   font-weight: 700;
+}
+/* --------------Header styles--------------- */
+
+header{
+   max-width: 1440px;
+   margin: 20px auto;
+   
+}
+nav{
+   width: 85%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.menu ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.menu ul li a{
+   text-decoration: none;
+   color: #000;
+}
+nav #check{
+   display: none;
+}
+nav .menu-btn{
+   display: none;
+   font-size: 1.5rem;
+}
+.cross-btn{
+   display: none;
+}
+/* --------------Banner styles--------------- */
+
+.banner{
+   max-width: 1440px;
+   margin: 50px auto;
+}
+.banner .container{
+   width: 85%;
+   height: 500px;
+   margin: auto;
+   background: url(../images/Group-13.png);
+   background-size: cover;
+   background-position:  center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.banner .container > div{
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.4);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.banner-texts{
+   text-align: center;
+   color: #fff;
+}
+.banner-texts h1{
+   margin: 20px 0px;
+}
+.banner-texts p{
+   font-size: 0.9rem;
+}
+.banner-inputs{
+   display: grid;
+   grid-template-columns: repeat(4,120px);
+   gap: 20px;
+   background: rgba(255,255,255,0.4);
+   padding: 15px;
+   border-radius: 10px;
+}
+.banner-inputs input,
+.banner-inputs select,
+.banner-inputs button{
+   padding: 15px 20px;
+   border-radius: 10px;
+   background: #fff;
+   outline: none;
+}
+.banner-inputs button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+}
+
+/* --------------popular tour styles--------------- */
+
+.popular-tour{
+   max-width: 1440px;
+   margin:20px auto;
+   
+}
+.popular-tour .container{
+   width: 85%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 15px;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+.popular-tour-img{
+   /* display: flex; */
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   height: 60%;
+}
+.popular-tour-img img{
+   width: 100%;
+    height: 100%; 
+   
+}
+.popular-tour-texts p{
+   /* font-size: 1rem; */
+   margin: 5px 0px;
+}
+.popular-texts ul li{
+   /* font-size:0.9rem; */
+   margin: 10px 0px;
+}
+.popular-tour-texts ul{
+   margin:20px;
+  
+}
+.popular-tour-texts button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 10px;
+   margin: 7px 0px;
+}
+/* -------------destinafion section design--------- */
+
+.destination{
+   max-width: 1440px;
+   margin: auto;
+}
+.destination .container{
+   width: 85%;
+   margin:50px auto;
+}
+.destination-texts{
+   text-align: center;
+}
+.destination-imgs{
+   display: grid;
+   gap: 15px;
+   margin: 30px auto;
+}
+.destination-imgs .maldive{
+   background: url(../images/Group-13.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column: 1/7;
+}
+.destination-imgs .indonesia{
+   background: url(../images/Rectangle-8.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column: 7/12;
+}
+.destination-imgs .srilanka{
+   background: url(../images/Rectangle-6.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column:1/4 ;
+}
+.destination-imgs .north-america{
+   background: url(../images/Rectangle-7.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column:4/9;
+}
+.destination-imgs .kashmir{
+   background: url(../images/Rectangle-9.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column: 9/12;
+}
+.destination-imgs .bangladesh{
+   background: url(../images/Rectangle-11.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column: 1/6;
+}
+.destination-imgs .bandorban{
+   background: url(../images/Rectangle-10.png);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   grid-column: 6/12;
+}
+.destination-imgs > div{
+   height: 250px;
+   width: 100%;
+   margin: 0px auto;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   color: #fff;
+}
+.destination-imgs > div > div{
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.3);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* ------------------Choose Us section designe----------------- */
+
+.choose-us{
+      max-width: 1440px;
+      margin: auto;
+   }
+   .choose-us .container{
+      width: 85%;
+      margin: auto;
+   }
+   .choose-us-texts{
+      text-align: center;
+   }
+   .choose-us-boxs{
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+      justify-content: center;
+      align-content: center;
+   }
+   .choose-us-boxs .box{
+      padding: 35px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: #000;
+   }
+   .choose-us-boxs .box img{
+      width: 3rem;
+   }
+   .choose-us-boxs .box:first-child{
+      background: rgba(200,100,100,0.1);
+   }
+   .choose-us-boxs .box:nth-child(2){
+      background:  rgba(0,100,200,0.1).2%;
+   }
+   .choose-us-boxs .box:last-child{
+      background: rgba(255,0,0,0.1) ;
+   }
+/* ------------------Deal section design----------------- */
+
+.deal{
+   max-width: 1440px;
+   margin: auto;
+}
+.deal .container{
+   width: 85%;
+   margin:50px auto;
+}
+.deal-texts{
+   text-align: center;
+}
+.deal-contents{
+   width: 100%;
+   margin: 30px auto;
+   
+}
+.deal-contents .content{
+   width: 100%;
+   height: 450px;
+   margin: 20px auto;
+   position: relative;
+   border-radius: 20px;
+}
+.deal-contents .content > div > div{
+   display: flex;
+   justify-content: flex-start;
+   gap: 10px;
+}
+.deal-contents .content > div > div div > span:first-child{
+   color: #e94444;
+}
+.deal-contents .content:first-child{
+   background: url(../images/Group-39.png);
+   background-size: cover;
+   background-position: center ;
+   background-repeat: no-repeat;
+}
+.deal-contents .content:nth-child(2){
+   background: url(../images/Group-40.png);
+   background-size: cover;
+   background-position: center ;
+   background-repeat: no-repeat;
+}
+.deal-contents .content:last-child{
+   background: url(../images/Group-39.png);
+   background-size: cover;
+   background-position: center ;
+   background-repeat: no-repeat;
+}
+.deal-contents .content > div{
+   width: 60%;
+   height: 65%;
+   background: rgba(255,255,255,0.8);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   padding: 30px 20px;
+   gap: 10px;
+}
+.deal strong{
+   margin: 10px 0px;
+}
+.deal-contents .content button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 10px 25px;
+   border-radius: 10px;
+}
+.deal-contents .content:first-child > div{
+   position: absolute;
+   right: 40px;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+}
+.deal-contents .content:nth-child(2) > div{
+   position: absolute;
+   left: 40px;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+}
+.deal-contents .content:last-child > div{
+   position: absolute;
+   right: 40px;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+}
+.deal .container .btn > button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 20px 25px;
+   border-radius: 10px;
+
+}
+.deal .container > .btn{
+   text-align: center;
+}
+/* ------------------Place section designe----------------- */
+
+.place{
+   max-width: 1440px;
+   margin: auto;
+}
+.place .container{
+   width: 85%;
+   margin: 50px auto;
+   
+}
+.place img{
+   width: 100%;
+}
+.perfect-place{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   margin: 50px auto;
+}
+.perfect-place .texts{
+   font-size: 0.9rem;
+   
+}
+.perfect-place .texts p{
+   margin: 20px auto;
+}
+.perfect-place .texts ul{
+   margin-left: 15px;
+}
+.perfect-place .texts button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 10px;
+   margin: 20px auto;
+}
+.perfect-place .img{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.perfect-place img{
+   height: 100%;
+}
+
+.place-form{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
+   justify-content: center;
+   align-items:center ;
+}
+.place-form .img{
+   height:100%;
+   border-radius: 20px;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.place-form .discount-seal{
+   background: #ff5400;
+   position: absolute;
+   right: 5px;
+   bottom: 45px;
+   color: #fff;
+   padding: 8px 17px;
+   border-radius: 10px;
+   transform: rotate(-20deg);
+}
+.discount-seal p,
+.discount-seal h2{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+.place-form .img img{
+   width: 100%;
+   height: 100%;
+}
+.place-form .form{
+   border: 1px solid #ff5400;
+   padding: 20px;
+   border-radius: 20px;
+}
+.place-form input{
+   border: none;
+   outline: none;
+   width: 100%;
+   margin: 10px auto;
+   padding: 15px 20px;
+   background: rgba(0,0,0,0.1);
+   border-radius: 10px;
+}
+.place-form hr{
+   width: 90%;
+   margin: 10px auto;
+}
+.place-form p{
+   font-size: 0.9rem;
+}
+.place-form input[type="submit"]{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 10px;
+   margin: 20px auto;
+}
+/* ------------------Recomended to visit Section designe----------------- */
+
+.recomended-tour{
+   max-width: 1440px;
+   margin: auto;
+}
+.recomended-tour .container{
+   width: 85%;
+   margin: auto;
+}
+.recomended-texts{
+   text-align: center;
+   margin: 50px 0px;
+}
+.recomended-contents{
+   margin: 30px auto;
+}
+.recomended-contents .img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.recomended-contents img{
+   width: 100%;
+   height: 100%;
+}
+.vasu-bihar,
+.mohastan{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 30px;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+   margin: 40px 0px;
+   
+}
+.recomended-contents button{
+   border: none;
+   outline: none;
+   font-weight: 700;
+   background: #ff5400;
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 10px;
+   margin: 20px auto;
+}
+/* ------------------Footer Section designe----------------- */
+
+footer{
+   width: 100%;
+   margin:auto;
+   padding: 50px 0px;
+   background: rgba(0,0,0,0.1);
+}
+footer .container{
+   width: 85%;
+   margin: auto;
+   text-align: center;
+}
+footer .footer-logo{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+   margin: 20px auto;
+}
+footer .icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   padding: 20px 0px;
+}
+footer hr{
+   margin: 30px 0px;
+}
+footer .copyright{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0px;
+}
+/* ------------------Responsive designe----------------- */
+
+/* for small screen */
+
+@media screen and (max-width:600px){
+   /* navbar responsive */
+   nav{
+      width: 95%;
+   }
+   .menu{
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: rgba(255,255,255,0.2);
+      width: 70%;
+      height: 100vh;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter:blur(5px)
+   }
+   .menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   .menu ul li{
+      border-bottom: 1px solid rgba(0,0,0,0.5);
+      padding: 8px 30px;
+   }
+   .menu ul li a{
+      color: #000;
+   }
+   nav .menu-btn{
+      display: block;
+   }
+   .cross-btn{
+      display: block;
+   }
+   .menu .cross-btn{
+      font-size: 1.5rem;
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      color: #000;
+      font-weight: 700;
+   }
+   #check:checked ~ .menu{
+      display: flex;
+   }
+   
+   /* banner responsive */
+   .banner{
+      padding: 30px 0px;
+   }
+   .banner .container{
+      width: 95%;
+   }
+   .banner-inputs{
+      grid-template-columns: repeat(1,1fr);
+   }
+   
+   /* popular tour responsive */
+   .popular-tour .container{
+      width: 95%;
+      grid-template-columns: repeat(1,1fr);
+   }
+   /* destination section responsive */
+   .destination .container{
+      width: 95%;
+   }
+   .destination-imgs{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .destination-imgs .maldive{
+      grid-column: 1/15;
+   }
+   .destination-imgs .indonesia{
+      grid-column: 1/15;
+   }
+   .destination-imgs .srilanka{
+      grid-column: 1/15;
+   }
+   .destination-imgs .north-america{
+      grid-column: 1/15;
+   }
+   .destination-imgs .kashmir{
+      grid-column: 1/15;
+   }
+   .destination-imgs .bangladesh{
+      grid-column: 1/15;
+   }
+   .destination-imgs .bandorban{
+      grid-column: 1/15;
+   }
+   
+   /*choose us section respomsive*/
+   .choose-us .container{
+      width: 95%;
+   }
+   .choose-us-boxs{
+      grid-template-columns: repeat(1,1fr);
+   }
+   
+   /*Deal and discount section respomsive*/
+   .deal .container{
+      width: 95%;
+   }
+   .deal-contents .content{
+      
+   }
+   .deal-contents .content:nth-child(2) > div{
+      
+   }
+   .deal-contents .content > div {
+      width: 85%;
+      height: 50%;
+      font-size: 0.8rem;
+      gap: 3px;
+      
+   }
+   .deal-contents .content span{
+      font-size: 0.5rem;
+   }
+   .deal-contents .content p{
+      font-size: 0.7rem;
+   }
+   .deal-contents .content h2{
+      font-size: 1rem;
+   }
+   .deal-contents .content{
+      height: 500px;
+      padding: 50px;
+   }
+   .deal-contents .content > div > div{
+      display: flex;
+      gap: 10px;
+   }
+   
+   /*Place  section respomsive*/
+   .place .container{
+      width: 95%;
+   }
+   .perfect-place{
+      grid-template-columns: repeat(1,1fr);
+      margin: 50px auto;
+   }
+   .perfect-place .texts{
+      font-size: 1rem;
+   }
+   .place-form{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+   }
+   .place-form p{
+      font-size: 0.8rem;
+      margin: 10px 0px;
+   }
+   .place-form hr{
+      margin: 10px 0px;
+   }
+   
+   /*Footer  section respomsive*/
+   footer{
+      padding: 20px 0px;
+   }
+   footer .container{
+      width: 95%;
+   }
+   footer .icons{
+      margin: 10px auto;
+   }
+   footer hr{
+      margin: 10px auto;
+   }
+   /*Recomended visit section respomsive*/
+   .recomended-tour .container{
+      width: 95%;
+   }
+   .vasu-bihar,
+   .mohastan{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   gap: 10px;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+   margin: 40px 0px;
+   
+}
+   
+}
