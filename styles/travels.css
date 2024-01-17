@@ -684,6 +684,9 @@ footer .copyright{
       width: 95%;
       grid-template-columns: repeat(1,1fr);
    }
+   .popular-tour-img{
+      height: 100%;
+   }
    /* destination section responsive */
    .destination .container{
       width: 95%;
